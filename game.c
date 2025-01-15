@@ -9,6 +9,7 @@ double find_distance(int x1,int y1, int x2, int y2);
 int main() {
     int GRID_SIZE;
     int tries = 0;
+    printf("Your goal is to navigate to the treasure on the map\n");
     printf("Enter the size of GRID to generate: ");
     scanf("%d", &GRID_SIZE);            
 
