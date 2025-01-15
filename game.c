@@ -53,7 +53,7 @@ int main() {
             printf("\n");
         }
         tries+=1;
-        printf("the distance b/w are: %.3f\n",find_distance(user_x,user_y,key_x,key_y));
+        printf("the distance b/w you and the treasure is: %.3f\n",find_distance(user_x,user_y,key_x,key_y));
                 
     }
     char exit[100];    
