@@ -1,6 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <math.h>
+#include <conio.h>
+
+int find_distance(int x1,int y1, int x2, int y2);
 
 int main() {
     //get name of the user
@@ -29,6 +33,7 @@ int main() {
     int key_x=rand()%GRID_SIZE;
     int key_y=rand()%GRID_SIZE;
     grid[key_x][key_y]=1;
+
     //showing the grid to user
     for(int x = 0; x < GRID_SIZE; x++) {
         for(int y = 0; y < GRID_SIZE; y++) {
@@ -36,7 +41,15 @@ int main() {
         }
         printf("\n");
     }
-    printf("THe keycoordinates are: %d %d",key_x,key_y);
+    printf("THe keycoordinates are: %d %d\n",key_x,key_y);
+    printf("the distance b/w are: %d",find_distance(0,0,key_x,key_y));
     return 0;
 
+}
+
+int find_distance(int x1,int y1, int x2, int y2){
+    int x_diff=x2-x1;
+    int y_diff=y2-y1;
+    int distance = sqrt((x_diff,2) + pow(y_diff,2));
+    return distance;
 }
