@@ -58,7 +58,7 @@ int main() {
     }
     char exit[100];    
     printf("YOU WIN!!\n");
-    printf("The treasure was at %d %d",key_x,key_y);
+    printf("The treasure was at %d %d\n",key_x,key_y);
     printf("it took you %d tries to beat the game!",tries);
 }
 
